@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>위험물 지정수량 암기표 (제3류~제6류)</title>
+<style>
+  body { font-family: "Malgun Gothic","Apple SD Gothic Neo",sans-serif; margin:20px; background:#fff; color:#111; }
+  h2 { border-bottom:3px solid #000; padding-bottom:4px; margin-top:36px; }
+  table { border-collapse: collapse; width:100%; margin-bottom:8px; font-size:14px; }
+  th, td { border:1px solid #444; padding:6px 8px; text-align:center; vertical-align:middle; }
+  th { background:#222; color:#fff; font-weight:bold; }
+  .qty { font-weight:bold; font-size:15px; }
+  .q10  { background:#FFF2A8; }
+  .q20  { background:#FFD6D6; }
+  .q50  { background:#FFD6D6; }
+  .q300 { background:#D6E9FF; }
+  .q1000{ background:#D9F2D9; }
+  .q2000{ background:#F3D6FF; }
+  .q4000{ background:#F3D6FF; }
+  .q6000{ background:#FFE0B3; }
+  .q10000{ background:#E0E0E0; }
+  .name { text-align:left; font-weight:bold; }
+  .formula { font-family: Consolas, monospace; }
+  .note { text-align:left; font-size:12px; color:#333; }
+  .mnemonic { font-weight:bold; font-size:16px; margin:2px 0 8px 0; }
+  .red { color:#e02020; }
+  .grade { font-weight:bold; font-size:15px; width:40px; }
+  .g1 { background:#FF8A8A; }
+  .g2 { background:#FFD27F; }
+  .g3 { background:#FFF3A0; }
+  .ptable { display:grid; grid-template-columns: repeat(18, 42px); gap:2px; margin:12px 0; font-size:11px; }
+  .pt-cell { border:1px solid #999; text-align:center; padding:2px 0; height:42px; display:flex; flex-direction:column; justify-content:center; }
+  .pt-cell .num { font-size:9px; color:#555; }
+  .pt-cell .sym { font-weight:bold; font-size:14px; }
+  .pt-blank { visibility:hidden; }
+  .alkali { background:#FF9E9E; }        /* 1족 알칼리금속 */
+  .alkearth { background:#FFC98A; }      /* 2족 알칼리토금속 */
+  .transition { background:#B9D6FF; }    /* 전이금속 */
+  .posttrans { background:#CFE8CF; }     /* 전이후금속(Al,Zn,Sb 등) */
+  .metalloid { background:#E3D2F5; }     /* 준금속 */
+  .nonmetal { background:#FFF6A8; }      /* 비금속(할로젠 포함) */
+  .noble { background:#DDDDDD; }         /* 비활성기체 */
+  .legend span { display:inline-block; padding:2px 8px; margin-right:6px; border-radius:3px; font-size:12px; }
+</style>
+</head>
+<body>
+
+
+<h2>제1류 - 산화성고체</h2>
+<p class="mnemonic">암기법 : <span class="red">아염과무</span> <span class="red">브질아</span> <span class="red">과다</span> 오삼천</p>
+<table>
+<tr><th>위험등급</th><th>지정수량</th><th>품명(성질군)</th><th>세부 품명</th><th>분자식</th><th>비고</th></tr>
+
+<tr><td class="grade g1" rowspan="3">I</td><td class="qty q50" rowspan="3">50kg</td><td rowspan="3" class="name"><span class="red">아</span>염소산염류<br>(ClO<sub>2</sub><sup>-</sup>)</td><td>아염소산 나트륨</td><td class="formula">NaClO<sub>2</sub></td><td class="note" rowspan="3"></td></tr>
+<tr><td>아염소산 칼륨</td><td class="formula">KClO<sub>2</sub></td></tr>
+<tr><td>아염소산 암모늄</td><td class="formula">NH<sub>4</sub>ClO<sub>2</sub></td></tr>
+
+<tr><td class="grade g1" rowspan="3">I</td><td class="qty q50" rowspan="3">50kg</td><td rowspan="3" class="name"><span class="red">염</span>소산염류<br>(ClO<sub>3</sub><sup>-</sup>)</td><td>염소산 나트륨</td><td class="formula">NaClO<sub>3</sub></td><td class="note" rowspan="3"></td></tr>
+<tr><td>염소산 칼륨 ★</td><td class="formula">KClO<sub>3</sub></td></tr>
+<tr><td>염소산 암모늄</td><td class="formula">NH<sub>4</sub>ClO<sub>3</sub></td></tr>
+
+<tr><td class="grade g1" rowspan="4">I</td><td class="qty q50" rowspan="4">50kg</td><td rowspan="4" class="name"><span class="red">과</span>염소산염류<br>(ClO<sub>4</sub><sup>-</sup>)</td><td>과염소산 나트륨</td><td class="formula">NaClO<sub>4</sub></td><td class="note" rowspan="4"></td></tr>
+<tr><td>과염소산 칼륨 ★</td><td class="formula">KClO<sub>4</sub></td></tr>
+<tr><td>과염소산 암모늄</td><td class="formula">NH<sub>4</sub>ClO<sub>4</sub></td></tr>
+<tr><td>과염소산 마그네슘</td><td class="formula">Mg(ClO<sub>4</sub>)<sub>2</sub></td></tr>
+
+<tr><td class="grade g1" rowspan="6">I</td><td class="qty q50" rowspan="6">50kg</td><td rowspan="6" class="name"><span class="red">무</span>기과산화물<br>(O<sub>2</sub><sup>2-</sup>)</td><td>과산화나트륨</td><td class="formula">Na<sub>2</sub>O<sub>2</sub></td><td class="note" rowspan="3">1족(알칼리금속) 과산화물<br>물과 반응 시 산소 발생 → 주수금지</td></tr>
+<tr><td>과산화칼륨</td><td class="formula">K<sub>2</sub>O<sub>2</sub></td></tr>
+<tr><td>과산화리튬</td><td class="formula">Li<sub>2</sub>O<sub>2</sub></td></tr>
+<tr><td>과산화마그네슘</td><td class="formula">MgO<sub>2</sub></td><td class="note" rowspan="3">2족(알칼리토금속) 과산화물</td></tr>
+<tr><td>과산화칼슘</td><td class="formula">CaO<sub>2</sub></td></tr>
+<tr><td>과산화바륨</td><td class="formula">BaO<sub>2</sub></td></tr>
+
+<tr><td class="grade g2" rowspan="4">II</td><td class="qty q300" rowspan="4">300kg</td><td rowspan="4" class="name"><span class="red">브</span>로민산염류<br>(BrO<sub>3</sub><sup>-</sup>)</td><td>브로민산 나트륨</td><td class="formula">NaBrO<sub>3</sub></td><td class="note" rowspan="4"></td></tr>
+<tr><td>브로민산 칼륨</td><td class="formula">KBrO<sub>3</sub></td></tr>
+<tr><td>브로민산 아연</td><td class="formula">Zn(BrO<sub>3</sub>)<sub>2</sub></td></tr>
+<tr><td>브로민산 마그네슘</td><td class="formula">Mg(BrO<sub>3</sub>)<sub>2</sub></td></tr>
+
+<tr><td class="grade g2" rowspan="4">II</td><td class="qty q300" rowspan="4">300kg</td><td rowspan="4" class="name"><span class="red">질</span>산염류<br>(NO<sub>3</sub><sup>-</sup>)</td><td>질산 나트륨</td><td class="formula">NaNO<sub>3</sub></td><td class="note" rowspan="4"></td></tr>
+<tr><td>질산 칼륨</td><td class="formula">KNO<sub>3</sub></td><td class="note">흑색화약 원료</td></tr>
+<tr><td>질산 암모늄</td><td class="formula">NH<sub>4</sub>NO<sub>3</sub></td><td class="note">안포폭약 원료</td></tr>
+<tr><td>질산 은</td><td class="formula">AgNO<sub>3</sub></td><td class="note">사진감광제</td></tr>
+
+<tr><td class="grade g2" rowspan="4">II</td><td class="qty q300" rowspan="4">300kg</td><td rowspan="4" class="name"><span class="red">아</span>이오딘산염류<br>(IO<sub>3</sub><sup>-</sup>)</td><td>아이오딘산 나트륨</td><td class="formula">NaIO<sub>3</sub></td><td class="note" rowspan="4"></td></tr>
+<tr><td>아이오딘산 칼륨</td><td class="formula">KIO<sub>3</sub></td></tr>
+<tr><td>아이오딘산 암모늄</td><td class="formula">NH<sub>4</sub>IO<sub>3</sub></td></tr>
+<tr><td>아이오딘산 칼슘</td><td class="formula">Ca(IO<sub>3</sub>)<sub>2</sub></td></tr>
+
+<tr><td class="grade g3" rowspan="3">III</td><td class="qty q1000" rowspan="3">1,000kg</td><td rowspan="3" class="name"><span class="red">과</span>망가니즈산염류<br>(MnO<sub>4</sub><sup>-</sup>)</td><td>과망가니즈산 나트륨</td><td class="formula">NaMnO<sub>4</sub></td><td class="note" rowspan="3"></td></tr>
+<tr><td>과망가니즈산 칼륨</td><td class="formula">KMnO<sub>4</sub></td><td class="note">진보라색</td></tr>
+<tr><td>과망가니즈산 암모늄</td><td class="formula">NH<sub>4</sub>MnO<sub>4</sub></td></tr>
+
+<tr><td class="grade g3" rowspan="2">III</td><td class="qty q1000" rowspan="2">1,000kg</td><td rowspan="2" class="name"><span class="red">다</span>이크로뮴산염류<br>(Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>)</td><td>다이크로뮴산 칼륨</td><td class="formula">K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub></td><td class="note">쓴맛, 의약용</td></tr>
+<tr><td>다이크로뮴산 암모늄</td><td class="formula">(NH<sub>4</sub>)<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub></td><td class="note"></td></tr>
+
+<tr><td class="grade g1">I</td><td class="qty q50">50kg</td><td class="name" colspan="2">그 밖에 행안부령: 차아염소산염류(ClO)</td><td class="formula">Ca(ClO)<sub>2</sub> 등</td><td class="note"></td></tr>
+<tr><td class="grade g2">II</td><td class="qty q300">300kg</td><td class="name" colspan="2">그 밖에 행안부령: 과아이오딘산·과아이오딘산염류·아질산염류·크롬/납/아이오딘의 산화물·폼옥소붕산염류 등</td><td class="formula">HIO<sub>4</sub>, CrO<sub>3</sub> 등</td><td class="note"></td></tr>
+</table>
+
+<h2>제2류 - 가연성고체</h2>
+<p class="mnemonic">암기법 : <span class="red">황적황</span> <span class="red">금속철마</span> <span class="red">인고천</span></p>
+<table>
+<tr><th>위험등급</th><th>지정수량</th><th>품명</th><th>세부/분자식</th><th>비고</th></tr>
+<tr><td class="grade g2" rowspan="3">II</td><td class="qty q100" style="background:#FFD6D6;" rowspan="3">100kg</td><td rowspan="3" class="name"><span class="red">황</span>화인 ★</td><td>삼황화인 P<sub>4</sub>S<sub>3</sub></td><td class="note">황색, 연소 시 P<sub>2</sub>O<sub>5</sub> + SO<sub>2</sub></td></tr>
+<tr><td>오황화인 P<sub>2</sub>S<sub>5</sub></td><td class="note">담황색, 수분 흡수 시 H<sub>3</sub>PO<sub>4</sub> + H<sub>2</sub>S</td></tr>
+<tr><td>칠황화인 P<sub>4</sub>S<sub>7</sub></td><td class="note"></td></tr>
+<tr><td class="grade g2">II</td><td class="qty" style="background:#FFD6D6;">100kg</td><td class="name"><span class="red">적</span>린 ★</td><td>P</td><td class="note">P<sub>2</sub>O<sub>5</sub>로 연소</td></tr>
+<tr><td class="grade g2">II</td><td class="qty" style="background:#FFD6D6;">100kg</td><td class="name"><span class="red">황</span> ★★</td><td>S</td><td class="note">순도 60wt% 이상인 것 (불순물은 활석 등 불연성물질·수분만 인정)</td></tr>
+<tr><td class="grade g3">III</td><td class="qty" style="background:#D6E9FF;">500kg</td><td class="name"><span class="red">철</span>분</td><td>Fe</td><td class="note">53㎛ 표준체 통과 50wt% 이상만 해당</td></tr>
+<tr><td class="grade g3">III</td><td class="qty" style="background:#D6E9FF;">500kg</td><td class="name"><span class="red">마</span>그네슘</td><td>Mg</td><td class="note">2mm체 통과 못한 덩어리, 지름 2mm 이상 막대 모양은 제외</td></tr>
+<tr><td class="grade g3" rowspan="3">III</td><td class="qty" style="background:#D6E9FF;" rowspan="3">500kg</td><td rowspan="3" class="name"><span class="red">금속</span>분 ★</td><td>알루미늄분</td><td class="note" rowspan="3">150㎛ 표준체 통과 50wt% 이상 (구리분·니켈분은 제외)</td></tr>
+<tr><td>아연분</td></tr>
+<tr><td>안티몬분</td></tr>
+<tr><td class="grade g3" rowspan="4">III</td><td class="qty" style="background:#D9F2D9;" rowspan="4">1,000kg</td><td rowspan="4" class="name"><span class="red">인</span>화성고체</td><td>고형알코올</td><td class="note" rowspan="4">1기압에서 인화점 40℃ 미만인 고체</td></tr>
+<tr><td>메타알데하이드 (CH<sub>3</sub>CHO)n</td></tr>
+<tr><td>제삼부틸알코올 (CH<sub>3</sub>)<sub>3</sub>COH</td></tr>
+<tr><td>고무풀, 래커퍼티 등</td></tr>
+</table>
+
+<h2>제3류 - 자연발화성물질 및 금수성물질</h2>
+<p class="mnemonic">암기법 : <span class="red">알칼리나</span> 10 <span class="red">황린</span> 20 <span class="red">알토유기</span> 50 <span class="red">금수인탄</span> 300</p>
+<table>
+<tr><th>위험등급</th><th>지정수량</th><th>품명</th><th>분자식/예</th><th>비고</th></tr>
+<tr><td class="grade g1" rowspan="4">I</td><td class="qty q10" rowspan="4">10kg</td><td class="name"><span class="red">칼</span>륨</td><td class="formula">K</td><td class="note" rowspan="4">공기 중 자연발화, 물과 반응 시 수소 발생 → 금수성</td></tr>
+<tr><td class="name"><span class="red">나</span>트륨</td><td class="formula">Na</td></tr>
+<tr><td class="name"><span class="red">알</span>킬알루미늄</td><td class="formula">R-Al</td></tr>
+<tr><td class="name">알킬<span class="red">리</span>튬</td><td class="formula">R-Li</td></tr>
+<tr><td class="grade g1">I</td><td class="qty q20">20kg</td><td class="name"><span class="red">황</span>린</td><td class="formula">P<sub>4</sub></td><td class="note">공기 중 자연발화 (금수성 아님, pH<sub>9</sub> 물 속 보관)</td></tr>
+<tr><td class="grade g2" rowspan="2">II</td><td class="qty q50" rowspan="2">50kg</td><td class="name"><span class="red">알</span>칼리금속(K,Na 제외) 및 알칼리<span class="red">토</span>금속</td><td class="formula">Li, Ca, Ba 등</td><td class="note" rowspan="2"></td></tr>
+<tr><td class="name"><span class="red">유기</span>금속화합물(알킬알루미늄·알킬리튬 제외)</td><td class="formula">-</td></tr>
+<tr><td class="grade g3" rowspan="3">III</td><td class="qty q300" rowspan="3">300kg</td><td class="name"><span class="red">금</span>속의 <span class="red">수</span>소화물</td><td class="formula">LiH, CaH<sub>2</sub> 등</td><td class="note" rowspan="3">물과 반응 시 가연성가스 발생</td></tr>
+<tr><td class="name">금속의 <span class="red">인</span>화물</td><td class="formula">Ca<sub>3</sub>P<sub>2</sub>, AlP 등</td></tr>
+<tr><td class="name">칼슘 또는 알루미늄의 <span class="red">탄</span>화물</td><td class="formula">CaC<sub>2</sub>, Al<sub>4</sub>C<sub>3</sub></td></tr>
+</table>
+
+<h2>제4류 - 인화성액체</h2>
+<table>
+<tr><th>위험등급</th><th>지정수량</th><th>품명</th><th>대표 물질</th><th>기준(인화점 등)</th></tr>
+<tr><td class="grade g1">I</td><td class="qty q1000" style="background:#FFF2A8;">50L</td><td class="name">특수인화물</td><td>이황화탄소(CS<sub>2</sub>), 다이에틸에테르</td><td class="note">발화점 100℃ 이하 또는 인화점 -20℃ 이하·비점 40℃ 이하</td></tr>
+<tr><td class="grade g2" rowspan="2">II</td><td rowspan="2" style="background:#D6E9FF;">제1석유류</td><td class="name">비수용성 200L</td><td>휘발유, 톨루엔</td><td class="note" rowspan="2">인화점 21℃ 미만 (예: 아세톤=수용성)</td></tr>
+<tr><td class="name">수용성 400L</td><td>아세톤</td></tr>
+<tr><td class="grade g2">II</td><td style="background:#D9F2D9;">400L</td><td class="name">알코올류</td><td>메탄올, 에탄올 (탄소수 1~3 포화1가)</td><td class="note"></td></tr>
+<tr><td class="grade g3" rowspan="2">III</td><td rowspan="2" style="background:#F3D6FF;">제2석유류</td><td class="name">비수용성 1,000L</td><td>등유, 경유</td><td class="note" rowspan="2">인화점 21℃ 이상 70℃ 미만</td></tr>
+<tr><td class="name">수용성 2,000L</td><td>초산, 아크릴산</td></tr>
+<tr><td class="grade g3" rowspan="2">III</td><td rowspan="2" style="background:#FFE0B3;">제3석유류</td><td class="name">비수용성 2,000L</td><td>중유, 크레오소트유</td><td class="note" rowspan="2">인화점 70℃ 이상 200℃ 미만</td></tr>
+<tr><td class="name">수용성 4,000L</td><td>글리세린, 에틸렌글리콜</td></tr>
+<tr><td class="grade g3">III</td><td style="background:#E0E0E0;">6,000L</td><td class="name">제4석유류</td><td>기어유, 실린더유</td><td class="note">인화점 200℃ 이상 250℃ 미만</td></tr>
+<tr><td class="grade g3">III</td><td style="background:#FFD6D6;">10,000L</td><td class="name">동식물유류</td><td>대두유, 아마인유 등</td><td class="note">인화점 250℃ 미만</td></tr>
+</table>
+
+<h2>제5류 - 자기반응성물질</h2>
+<table>
+<tr><th>지정수량</th><th>품명</th><th>예시</th></tr>
+<tr><td class="qty" style="background:#FFF2A8;">10kg (제1종)<br>100kg (제2종)</td><td class="name">유기과산화물</td><td>과산화벤조일(BPO), 과산화메틸에틸케톤</td></tr>
+<tr><td class="qty" style="background:#FFD6D6;" rowspan="9">10kg / 100kg<br>(위험등급에 따라 구분)</td><td class="name">질산에스터류</td><td>나이트로글리세린, 나이트로셀룰로오스, 질산메틸</td></tr>
+<tr><td class="name">나이트로화합물</td><td>트리나이트로톨루엔(TNT), 피크르산</td></tr>
+<tr><td class="name">나이트로소화합물</td><td>파라나이트로소벤젠</td></tr>
+<tr><td class="name">아조화합물</td><td>아조비스이소부티로니트릴</td></tr>
+<tr><td class="name">다이아조화합물</td><td>다이아조다이나이트로페놀</td></tr>
+<tr><td class="name">하이드라진 유도체</td><td>다이메틸하이드라진</td></tr>
+<tr><td class="name">하이드록실아민</td><td>NH<sub>2</sub>OH</td></tr>
+<tr><td class="name">하이드록실아민염류</td><td>황산하이드록실아민</td></tr>
+<tr><td class="name">그 밖에 행안부령이 정하는 것</td><td>금속의 아지화합물, 질산구아니딘 등</td></tr>
+</table>
+<p class="note" style="margin-top:-4px;">※ 실제 지정수량은 위험등급(제1종=10kg, 제2종=100kg)에 따라 품명 내에서도 구분됨</p>
+
+<h2>제6류 - 산화성액체</h2>
+<table>
+<tr><th>위험등급</th><th>지정수량</th><th>품명</th><th>분자식</th><th>기준</th></tr>
+<tr><td class="grade g1" rowspan="3">I</td><td class="qty q300" rowspan="3">300kg</td><td class="name">과염소산</td><td class="formula">HClO<sub>4</sub></td><td class="note" rowspan="3"></td></tr>
+<tr><td class="name">과산화수소</td><td class="formula">H<sub>2</sub>O<sub>2</sub></td><td class="note">농도 36wt% 이상인 것만 해당</td></tr>
+<tr><td class="name">질산</td><td class="formula">HNO<sub>3</sub></td><td class="note">비중 1.49 이상인 것만 해당</td></tr>
+</table>
+
+</body>
+</html>
