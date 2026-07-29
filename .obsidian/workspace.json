@@ -11,14 +11,12 @@
             "id": "f25e93f7ecafddca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "5.지식/CIELAB.md",
-                "mode": "source",
-                "source": false
+                "file": "위험물 산업기사/원소_주기율표.jpg"
               },
-              "icon": "lucide-file",
-              "title": "CIELAB"
+              "icon": "lucide-image",
+              "title": "원소_주기율표"
             }
           }
         ]
@@ -193,12 +191,18 @@
   },
   "active": "f25e93f7ecafddca",
   "lastOpenFiles": [
+    "위험물 산업기사/금속의반응성 크기.png",
+    "위험물 산업기사/NH4_가__1_양이온인_이유.md",
+    "위험물 산업기사/원소_주기율표.jpg",
+    "[별표 1] 위험물 및 지정수량(제2조 및 제3조관련)(위험물안전관리법 시행령).pdf",
+    "5.지식/CIELAB.md",
+    "위험물 산업기사/NH4⁺가 +1 양이온인 이유.md",
+    "위험물 산업기사",
     "1.소재/보안물질/1. 유기형광체/R621.md",
     "3.장비/색차계 (X-Rite SP62).md",
     "current_files.txt",
     "1.소재/보안물질/4. 색변환 안료/2. CSP-GV/Lot.No 260626 (50min).md",
     "4.",
-    "5.지식/CIELAB.md",
     "1.소재/보안물질/4. 색변환 안료/2. CSP-GV/Lot.No 260624 (850℃ 4hr).md",
     "1.소재/SIC/NS00650 260623(A) MITK向.md",
     "5.지식/LCH.md",
@@ -217,8 +221,6 @@
     "1.소재",
     "보안물질/근적외선 발광/무제.md",
     "1.소재/보안물질/4. 색변환 안료/2. CSP-GV",
-    "1.소재/보안물질/4. 색변환 안료/1. CSP-GG",
-    "1.소재/보안물질/4. 색변환 안료",
     "create a link.md",
     "환영합니다!.md",
     "무제 2.canvas",
