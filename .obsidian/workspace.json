@@ -25,14 +25,14 @@
             "id": "053fd2242524dbcc",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/core-plugins.json",
-                "bFile": ".obsidian/core-plugins.json",
-                "aRef": ""
+                "file": "위험물 산업기사/화학이론/산화수_개념정리.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: core-plugins.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "산화수_개념정리"
             }
           },
           {
@@ -211,18 +211,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:빠른 전환기 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false,
-      "obsidian-git:Open Git source control": false
+      "bases:새 베이스 생성하기": false
     }
   },
   "active": "92757e331564c9f1",
   "lastOpenFiles": [
+    "위험물 산업기사/화학이론/산화물_과산화물_구분.md",
+    "위험물 산업기사/화학이론/루이스_구조식_기본규칙.md",
+    "위험물 산업기사/화학이론/원소별_전자배치_오비탈.md",
+    "위험물 산업기사/화학이론/몰질량.md",
     "위험물 산업기사/화학이론/결합.md",
     "위험물 산업기사/암기/화학물_정리.md",
     "위험물 산업기사/암기/위험물_화학반응식_패턴정리 1.md",
@@ -235,7 +239,6 @@
     "위험물 산업기사/위험물산업기사_학습로드맵.md",
     "위험물 산업기사/화학이론/이상기체상태방정식.md",
     "기출.md",
-    "위험물 산업기사/화학이론/몰질량.md",
     "위험물 산업기사/암기/원자량.md",
     "위험물 산업기사/암기/위험물의 화학반응식3.jpg",
     "위험물 산업기사/암기/위험물의 화학반응식2.jpg",
@@ -251,8 +254,6 @@
     "위험물 산업기사/화학이론/NH4, 1가 양이온인 이유.md",
     "위험물 산업기사/암기/화학물 정리.md",
     "위험물 산업기사/화학이론/화학_명명법.md",
-    "위험물 산업기사/화학이론/산화물_과산화물_구분.md",
-    "위험물 산업기사/화학이론/루이스_구조식_기본규칙.md",
     "위험물 산업기사/화학이론/화학식_첨자_구분.md",
     "위험물 산업기사/화학이론/전이금속_설명.md",
     "위험물 산업기사/화학이론/전기음성도.md",
